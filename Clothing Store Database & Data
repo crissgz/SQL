@@ -1,0 +1,26 @@
+--Create a Clothing Store Database
+CREATE TABLE Clothing_Store (id INTEGER PRIMARY KEY, name TEXT, color TEXT, Price REAL, Quantity INTEGER);
+
+INSERT INTO Clothing_Store VALUES (1, "Jeans", "Blue", 90, 10);
+INSERT INTO Clothing_Store VALUES (2, "Shirts", "Black", 40, 15);
+INSERT INTO Clothing_Store VALUES (3, "Jackets", "Brown", 80, 20);
+INSERT INTO Clothing_Store VALUES (4, "Hats", "Red", 20, 25);
+INSERT INTO Clothing_Store VALUES (5, "Scarfs", "Yellow", 15, 30);
+INSERT INTO Clothing_Store VALUES (6, "Belts", "Brown", 30, 35);
+INSERT INTO Clothing_Store VALUES (7, "T-Shirts", "White", 25, 40);
+INSERT INTO Clothing_Store VALUES (8, "Socks", "Teal", 5, 45);
+INSERT INTO Clothing_Store VALUES (9, "Underwear", "Purple", 10, 50);
+INSERT INTO Clothing_Store VALUES (10, "Sweater", "Gray", 45, 55);
+INSERT INTO Clothing_Store VALUES (11, "Hoody", "Black", 60, 60);
+INSERT INTO Clothing_Store VALUES (12, "Pants", "Beige", 70, 65);
+INSERT INTO Clothing_Store VALUES (13, "Beanies", "Red", 15, 70);
+INSERT INTO Clothing_Store VALUES (14, "Sweat Pants", "Gray", 30, 75);
+INSERT INTO Clothing_Store VALUES (15, "Rings", "Silver", 100, 5);
+
+--Display the Database ordered by price
+SELECT * FROM Clothing_Store 
+ORDER BY Price desc;
+
+--Display Average Price from Clothing Store
+SELECT AVG(Price) 
+FROM Clothing_Store;
